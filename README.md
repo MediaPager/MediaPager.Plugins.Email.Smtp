@@ -1,6 +1,6 @@
 # MediaPager.Plugins.Email.Smtp
 
-Official SMTP email provider plugin for [MediaPager](https://github.com/nobugsgiven/dev.nobugsgiven.apps.MediaPager).
+Official SMTP email provider plugin for [MediaPager](https://github.com/MediaPager/MediaPager).
 Ships with the app and is **loaded by default**.
 
 Sends password resets and invitations through any standards-compliant SMTP server —

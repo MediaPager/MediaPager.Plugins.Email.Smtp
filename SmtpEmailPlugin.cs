@@ -26,7 +26,7 @@ public sealed class SmtpEmailPlugin(IPluginSettingsStore settingsStore) : IMedia
         Id: "mediapager.email.smtp",
         Name: "SMTP",
         Version: "0.1.0",
-        Author: "Nobugsgiven",
+        Author: "MediaPager",
         Description: "Send email through any standards-compliant SMTP server.");
 
     public IReadOnlyList<PluginSettingDefinition> Settings { get; } =

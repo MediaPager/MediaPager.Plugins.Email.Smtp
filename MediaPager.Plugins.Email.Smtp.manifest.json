@@ -2,7 +2,7 @@
   "id": "mediapager.email.smtp",
   "name": "SMTP",
   "description": "Send email through any standards-compliant SMTP server.",
-  "author": "Nobugsgiven",
+  "author": "MediaPager",
   "types": "email",
   "sdk": "MediaPager.App.PluginContracts",
   "sdkVersion": "0.1.0"
