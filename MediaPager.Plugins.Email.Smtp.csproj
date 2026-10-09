@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MediaPager.Plugins.Email.Smtp</RootNamespace>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Description>Official SMTP email provider plugin. References the plugin SDK only.</Description>
+    <PackageId>MediaPager.Plugins.Email.Smtp</PackageId>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../MediaPager.App.PluginContracts/MediaPager.App.PluginContracts.csproj" />
+    <PackageReference Include="MailKit" Version="4.14.1" />
+  </ItemGroup>
+
+</Project>
