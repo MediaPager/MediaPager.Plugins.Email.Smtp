@@ -8,7 +8,8 @@ self-hosted Postfix, Postmark, Amazon SES, your ISP's relay, whatever has an end
 
 ## Settings
 
-Defined by `IPluginSettingsSchema` and stored under `plugins.smtp.*`:
+Defined by `IPluginSettingsSchema` and stored under
+`Settings:Plugins:mediapager.email.smtp` (legacy `plugins.smtp.*` values are migrated):
 
 | Key | Label | Notes |
 | --- | --- | --- |
@@ -19,4 +20,7 @@ Defined by `IPluginSettingsSchema` and stored under `plugins.smtp.*`:
 | `from` | From address | required |
 | `enableSsl` | Use SSL/TLS | defaults to `true`; port `465` connects SSL-on-connect, otherwise STARTTLS |
 
-Configure them in **Settings → Email** in the SPA.
+Configure them in **Settings → General → Email provider → settings** in the SPA. Environment
+fallbacks use `MEDIAPAGER_Settings__Plugins__mediapager.email.smtp__<key>`. Values saved in the
+UI are stored in the runtime database; all plugin setting values are protected at rest and
+secret fields are never returned by the API.
